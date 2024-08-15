@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp"
+    android:minHeight="200dp"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Al eliminar este registro se eliminaran también cada una de sus tareas. ¿Está usted seguro/a?" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btncanceldeletechild"
+            android:layout_width="147dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="#74CF1020"
+            android:text="Cancelar"
+            app:icon="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <Button
+            android:id="@+id/btnconfirmdelete"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#009688"
+            android:text="Confirmar"
+            app:icon="@drawable/icon_confirm" />
+    </LinearLayout>
+
+</LinearLayout>
